@@ -38,6 +38,7 @@ A aplicação foi desenvolvida utilizando apenas tecnologias base da web, com fo
 ---
 
 ## 📂 Estrutura do projeto
+```
 portfolio/
 │
 ├── index.html
@@ -59,7 +60,7 @@ portfolio/
 │ ├── icons/
 │ ├── foto-perfil.jpg
 │ └── curriculo.pdf
-
+```
 ---
 
 ## 📱 Responsividade
