@@ -1,0 +1,149 @@
+#contato{display: flex;
+    gap:25px;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+    padding:15px;
+    background-color: var(--contato-fundo);
+    color:var(--texto);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#contato h2{
+  width:100%;
+  text-align: center;
+  font-size:3.7em;
+  font-weight: lighter;
+}
+
+#contato h3{
+  width:100%;
+  text-align: center;
+  font-size:2em;
+  padding:10px;
+  font-weight: lighter;
+  font-family: 'Courier New', Courier, monospace;
+  color: var(--sombra);
+}
+
+#contato #icons-contato{
+  display: flex;
+  gap:5%;
+  width:100%;
+  justify-content: center;
+  font-size:2.6em;
+  margin:2% 0px 5% 0px;
+}
+
+#contato #icons-contato i{
+  cursor: pointer;
+  color:var(--sombra);
+  transition: transform 0.4s ease-in-out , color 0.4s ease-in-out;
+}
+
+#contato #icons-contato i:hover{
+transform: scale(1.1);
+color:var(--color-secondary)
+}
+
+
+#contato form{
+  display: flex;
+  min-width:100%;
+  flex-direction: column;
+  justify-items:center ;
+  align-items: center;
+  gap:3em;
+}
+
+#contato form input{
+  width:50%;
+  padding:5px;
+  border:0;
+  border-bottom:1px solid var(--texto);
+  background-color:transparent;
+  color:var(--contato-texto);
+  font-family: 'Source Code Pro',Courier New, Courier, monospace;
+  font-size:1.2em;
+  transition:transform 0.3s , border-bottom 0.3s ease-in-out;
+}
+
+#contato form input::placeholder{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:lighter;
+  font-size:1em;
+}
+
+#contato form input:focus{
+ outline: none;
+ border-bottom:1px solid var(--contato-input) ;
+}
+
+#contato form textarea{
+  min-width:80%;
+  max-width:80%;
+  min-height:23rem;
+  max-height:auto;
+
+  font-family:'Source Code Pro',serif;
+  font-size:1.25em;
+  font-weight:500;
+  line-height: 1.5;
+
+  padding: 10px 12px;
+  border-radius: 10px;
+  resize: vertical;
+  background-color: var(--contato-fundo);
+  color:var(--contato-texto);
+}
+
+#contato form textarea:focus{
+  outline:none;
+  border:1px solid var(--contato-textarea);
+}
+
+#contato form button{
+  width:auto;
+  padding:5px 3rem 5px 3rem;
+
+  background-color:var(--contato-fundo);
+  border:2px solid var(--texto);
+  border-radius:12px;
+  cursor:pointer;
+
+  color:var(--contato-texto);
+  font-size:1.4rem;
+  font-family:monospace;
+  font-weight: bold;
+  transition: color 0.5s ease-in-out, background-color 0.45s ease-in-out;
+}
+
+#contato form button:hover{
+  background-color:var(--texto);
+  color:var(--fundo);
+}
+
+@media (max-width:840px){
+
+  #contato h2{
+    font-size:3rem;
+  }
+
+  #contato h3{
+    font-size:1.7rem;
+  }
+  #contato form input{
+    width:80%;
+  }
+
+  #contato form textarea{
+    min-width:100%;
+    max-width:100%;
+  }
+}
+
+@media(max-width:500px){
+  #contato form input{
+    width:100%;
+  }
+}

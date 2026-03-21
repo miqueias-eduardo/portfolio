@@ -1,0 +1,65 @@
+/* Estilo da seção */
+.skills-section {
+  padding: 60px 20px;
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight:lighter;
+  color:var(--color-tertiary);
+  margin-bottom: 40px;
+}
+
+/* Grid das habilidades */
+.skills-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Cada “card” de habilidade */
+.skill {
+  background-color: var(--skill-card);
+  padding: 30px 5px 0px;
+  text-align: center;
+  border-radius: 15px;
+  cursor:pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.skill img {
+  width: 80%;
+  height:80%;
+  margin-bottom:1%;
+
+}
+
+.skill p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight:lighter;
+  font-style:italic;
+  text-shadow: 0px 0px 3px var(--sombra);
+  color: var(--texto);
+}
+
+.skill:hover {
+  background-color: var(--color-secondary);
+  transform: translateY(-5px);
+}
+
+.skill:hover p{
+  color:var(--fundo);
+}
+
+@media(max-width:645px){
+  .skills-grid{
+     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  .skill p{
+    font-size:0.8em;
+  }
+}

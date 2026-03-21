@@ -3,169 +3,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>🚀Portifolio | Miqueias</title>
+    <!--links do nav-bar-->
+    <link rel="stylesheet" href="styles/nav-bar/nav-bar.css">
+    <link rel="stylesheet" href="styles/nav-bar/tema.css">
+    <link rel="stylesheet" href="styles/nav-bar/menu-mobile.css">
+
+    <!--links das outras sessoes do portifolio-->
+    <link rel="stylesheet" href="styles/pag.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/inicio.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/projetos.css">
+    <link rel="stylesheet" href="styles/contato.css">
+    <link rel="stylesheet" href="styles/modal.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <title>Miqueias | Desenvolvedor Front-End</title>
 </head>
-<body>
+<body class="tema-claro">
+    <header>
+        <h1 id="titulo">MIQUEIAS EDUARDO</h1>
+    <nav class="nav-bar">
+   <ul>
 
-<nav class="barra">
-    
-    <a href="#about">sobre mim</a>
-    <a href="#formacao">formação educacional</a>
-    <a href="#pro_titulo">portifolio</a>
-    <a href="#contato">contato</a>
+
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#about">Sobre</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#projetos">Projetos</a></li>
+    <li><a href="#contato">Contato</a></li>
+   </ul>
+
 </nav>
- <!--parte do codigo sobre mim-->
-<div id="about">
-    
-    <span>Olá,tudo bem?</span>
-    <h2>Eu sou Miqueias!</h2>
-    <h4>Sou estudante de analise e desenvolvimento de sistemas<br>
-        E apaixonado por programação e pelo poder transformador da tecnologia.
-        <br>
-   Sou criativo, comunicativo, adaptativo e dedicado : acredito que disciplina 
-   e vontade de evoluir quebram qualquer barreira.</h4>
-   
-</div>
 
-<!--parte do codigo da formação educacional-->
-<div id="formacao">
-<p>Atualmente, estou me aprofundando em tecnologias fundamentais para o desenvolvimento web e
-     a automação de processos. Tenho conhecimento em <strong>HTML, CSS e JavaScript,</strong>
-      que me permitem criar interfaces dinâmicas, acessíveis e visualmente atrativas.
-      </p>
+<div class="tema">
+    <i class="fa-solid fa-sun active" id="claro" ></i>
+    <i class="fa-solid fa-moon" id="escuro"  ></i>
+</div>
+  <i id ="menu-mobile" class="fa-solid fa-bars"></i>
+    </header>
+
+    <main>
+        <section id="inicio">
+
+          <img src="assets/foto-perfil.jpg" alt="Foto de perfil" >
+
+         <aside id="text">
+          <h1>Olá,</h1>
+          <h2>Eu sou Miqueias!</h2>
+
+          <h3>Front-end Developer. Desenvolvo interfaces web com foco em código limpo, performance e boas práticas.</h3>
+        </aside>
+        <a href="assets/curriculo.pdf"
+        target="_blank" aria-label="Curriculo">
+        Download CV
+      </a>
+        <a href="#contato">entrar em contato</a>
+
+        </section>
+
+    <section id="about">
+        <h3>Sobre Mim</h3>
+
 <p>
-Também venho explorando o universo do <strong>Python </strong>, com foco em automações e manipulação de dados.
- Utilizo bibliotecas como <strong>Pandas</strong> para análise 
- e transformação de dados e <strong>Selenium</strong> para automação
-  de tarefas repetitivas e testes em aplicações web.</p>
+Sou estudante de Análise e Desenvolvimento de Sistemas
+e desenvolvo aplicações web utilizando tecnologias  <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>Node.js</strong> e <strong>Express</strong>.
+Também possuo conhecimentos em <strong>Java</strong> e <strong>Python</strong>.</p>
 
-  <p>
-Estou sempre em evolução,
- buscando aprender na prática, experimentar novas soluções e 
-  colocar a mão no código sempre que posso.
- Acredito que a tecnologia é uma ferramenta poderosa para gerar impacto real 
-   — e estou construindo meu caminho com essa convicção.</p>
-</div>
-
-<!--parte do codigo dos projetos-->
-
-<h1 id="pro_titulo">Projetos</h1>
-
-<div id="slider">
-
-<div id="projetos">
-
-  <!--botao para mover as imagens-->
-
-<input type="radio"name="imagem"id="btn_1" checked>
-<input type="radio"name="imagem"id="btn_2" >
-<input type="radio" name="imagem"id="btn_3" >
-<input type="radio"name="imagem"id="btn_4" >
-
-<!--fim dos botoes para mover imagens-->
-
-<!--imagens do projeto-->
-<div class="img_projeto" >
-<!--primeira imagem-->
-
-<img src="projeto_1.png" alt="imagem de uma pagina de login com
- nome, email, e senha.
- Com uma cor azul e verde no fundo da pagina">
-
-</div>
-
-<div class="img_projeto">
-<!--segunda imagem-->
-
-<img src="projeto_2.png" alt="imagem de uma pagina de cadastro com
- nome, email e senha com uma cor azul e verde no fundo da pagina">
-
-</div>
-
-<div class="img_projeto">
-<!--terceira imagem-->
-
-<img src="projeto_3.png" alt="imagem de uma pagina que
- explica o que e linguagem de programação 
- e fala sobre algumas delas. Tem uma cor de fundo azul clara e azul escuro, as duas cores bem discretas.">
-
-</div>
-
-<div class="img_projeto">
-<!--quarta imagem-->
-
-<img src="projeto_4.png">
-
-</div>
-
-<!--fim das imagens do projeto-->
-</div>
-
-<!--botoes de navegação-->
-
-<div class="navegacao-btn">
- <label for="btn_1" class="btn"> </label>
- <label for="btn_2" class="btn"> </label>
- <label for="btn_3" class="btn"> </label>
- <label for="btn_4" class="btn"> </label>
-</div>
-
-</div>
-
-<!--link do projeto apresentado em cada imagem-->
-<div id="text-img">
-  <p>link do projeto:</p>
-<a class="text" href="projeto site/login e sign up/login.html" target="_blank">pagina de login</a>
-<a class="text" href="projeto site/login e sign up/sign_up.html" target="_blank">pagina de cadastro</a>
-<a class="text" href="projeto site/site.html" target="_blank">pagina sobre linguagens de programação</a>
-<a class="text" href="https://github.com/miqueias-eduardo/sistema-livraria-terminal" target="_blank">Livraria Terminal — Feita com Python</a>
-
-</div>
-
-
-<!--parte do codigo para entra em contato-->
-
-<div id="contato">
-   
-   <ol>
-    <h3>Contato:</h3>
-    <li>
-      <a href=" https://wa.me/558194442388" target="_blank">whatsapp
-      <span class="valor">(81)9444-2388</span>
-    </a></li>
-    <li><a href="https://github.com/miqueias-eduardo" target="_blank">Github
-      <span class="valor">  miqueias-eduardo</span>
-    </a></li>
-    <li><a href="mailto:miqueiaseduardo294@gmail.com" target="_blank"> email 
-      <span class="valor">miqueiaseduardo294@gmail.com</span>
-
-    </a></li>
-           
-   </ol>
-
-
-    <form action="mailto:miqueiaseduardo294@gmail.com" method="post" id="mens" enctype="text/plain">
-
-    <h2>Fale comigo!</h2>
-      
-      <input type="text" placeholder="nome" required id="nome" class="formulario">
-
-
-      <input type="email" placeholder="e-mail" required id="email" class="formulario">
-
-
-      <textarea name="mensagem" placeholder="mensagem" required id="mensagem" class="formulario"></textarea>
-      
-        
-      <input type="submit" value="Enviar">
-
-    <h2 id="mostrar_mens">mensagem enviada</h2>
-    </form>
+  <p>Gosto de tecnologia, de aprender constantemente e de transformar ideias em código.
+  Estou sempre buscando evoluir como desenvolvedor e melhorar minhas habilidades a cada projeto que desenvolvo.</p>
+    </section>
+        <section id="skills" class="skills-section">
+  <h2 class="skills-title">Minhas Habilidades</h2>
+  <div class="skills-grid">
+    <div class="skill">
+      <img src="assets/icons/icon-html5.png" alt="HTML">
+      <p>HTML</p>
+    </div>
+    <div class="skill">
+      <img src="assets/icons/icon-css.png" alt="CSS">
+      <p>CSS</p>
+    </div>
+    <div class="skill">
+      <img src="assets/icons/icon-javascript.png" alt="JavaScript">
+      <p>JavaScript</p>
+    </div>
+    <div class="skill">
+      <img src="assets/icons/icon-python.png" alt="Python">
+      <p>Python</p>
     </div>
 
-    
-<script src="index.js"></script>
+    <div class="skill">
+     <img src="assets/icons/icon-node.js" alt="Node.js">
+      <p>Node.js</p></div>
 
+    <div class="skill">
+      <img src="assets/icons/icon-java.png" alt="Java">
+      <p>Java</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/icons/icon-sql.png" alt="SQL">
+      <p>SQL</p>
+    </div>
+
+    <div class="skill">
+      <img src="assets/icons/icon-git.png" alt="GIT">
+      <p>GIT</p>
+    </div>
+
+  </div>
+</section>
+
+        <section id="projetos">
+          <h1>Meus Projetos</h1>
+        <div id="lista-projetos">
+
+          <aside class="projeto">
+            <div class ="content-img">
+              <img src="assets/projetos-img/img-projeto1.png" alt="tela do sistema de cadastro e login">
+            </div>
+            <div class="text">
+              <h2>Sistema de Cadastro e Login</h2>
+              <p>Projeto de autenticação desenvolvido com foco em validação de dados e experiência do usuário.
+                 Permite o cadastro e login com verificação de informações e armazenamento local,
+                  simulando um sistema real de acesso.
+                  </p>
+                  <ul>
+                <li>Validação de nome, e-mail e senha no cadastro </li>
+
+                <li>Sistema de login com autenticação via localStorage</li>
+
+                <li>Feedback visual com modais para erros e sucesso</li>
+
+                <li>Interface simples e intuitiva</li>
+                  </ul>
+            </div>
+
+            <div class="content-btn">
+              <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-e-login/">acessar projeto</a>
+              <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-e-login">acessar no repositorio</a>
+            </div>
+
+          </aside>
+
+          <aside class="projeto">
+            <div class ="content-img">
+              <img src="assets/projetos-img/img-projeto2.png" alt="tela do sistema de cadastro de clientes">
+            </div>
+            <div class="text">
+              <h2>Sistema De Cadastro De Clientes</h2>
+              <p>Aplicação web para gerenciamento de clientes, permitindo cadastrar,
+                 editar e excluir registros de forma prática e organizada.
+                 O projeto demonstra estruturação modular do código e foco na experiência do usuário.</p>
+                 <ul>
+      <li>Cadastro, edição e exclusão de clientes</li>
+      <li>Persistência de dados com localStorage</li>
+      <li>Interface organizada e intuitiva</li>
+      <li>Organização clara da lógica do sistema</li>
+      <li>Manipulação eficiente do DOM</li>
+        </ul>
+            </div>
+
+            <div class="content-btn">
+              <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-de-clientes/">acessar projeto</a>
+              <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-de-clientes">acessar no repositorio</a>
+            </div>
+
+          </aside>
+
+          <aside class="projeto">
+            <div class ="content-img">
+              <img src="assets/projetos-img/img-projeto3.png" alt="tela do site de linguagem de programação">
+            </div>
+            <div class="text">
+              <h2>Site de linguagem de programação</h2>
+              <p>Projeto desenvolvido para apresentar diferentes linguagens de programação
+                 de forma organizada e visualmente atrativa,
+                 focando em clareza, estrutura e experiência do usuário.</p>
+           <ul>
+          <li>Layout moderno e responsivo</li>
+          <li>Estrutura HTML semântica</li>
+          <li>Design organizado e intuitivo</li>
+          <li>Interatividade com JavaScript</li>
+          <li>Código limpo e bem estruturado</li>
+           </ul>
+            </div>
+
+            <div class="content-btn">
+              <a href="https://miqueias-eduardo.github.io/linguagens-de-programacao/">acessar projeto</a>
+              <a href="https://github.com/miqueias-eduardo/linguagens-de-programacao">acessar no repositorio</a>
+            </div>
+
+          </aside>
+
+
+
+          </div>
+        </section>
+
+    </main>
+     <footer id="contato">
+      <h2>Fale comigo!</h2>
+
+      <h3>Se você tem um projeto em mente, vamos transformar em realidade.</h3>
+
+      <aside id="icons-contato">
+        <a href="https://github.com/miqueias-eduardo" target="_blank" aria-label="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/miqueias-eduardo-331847371/" target="_blank" aria-label="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="mailto:miqueiaseduardo294@gmail.com" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+          </a>
+        <a href="https://wa.me/5581994442388" target="_blank" aria-label="WhatsApp">
+          <i class="fa-brands fa-whatsapp"></i>
+          </a>
+      </aside>
+
+      <form action="https://formsubmit.co/miqueiaseduardo294@gmail.com" method="POST">
+        <input type="text" placeholder="nome" name="name" required>
+        <input type="email" id="email" placeholder="email" name="email" required>
+        <textarea name="mensagem" id="" placeholder="digite uma mensagem"required></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <button type="submit"><i class="fa-solid fa-mug-hot"></i>  vamos conversar</button>
+      </form>
+
+      &copy; 2026 — Miqueias Eduardo
+     </footer>
+     <aside id="modal-sucesso" class="modal-overlay">
+  <aside class="modal-box">
+    <div class="modal-icon">✓</div>
+    <h2>Email enviado!</h2>
+    <p>Sua mensagem foi enviada com sucesso.</p>
+    <button id="fechar-modal">Fechar</button>
+  </aside>
+</aside>
+    <script src="src/index.js" type="module"></script>
 </body>
 </html>

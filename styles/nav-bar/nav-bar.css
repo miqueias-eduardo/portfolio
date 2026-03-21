@@ -1,0 +1,89 @@
+header{
+    display: flex;
+    flex-direction:row;
+    align-items:center;
+    position: fixed;
+    width: 100%;
+    gap:2%;
+    background-color:var(--navbar_header);
+    height:5em;
+    z-index:100;
+    backdrop-filter: blur(40px);
+}
+
+#titulo{
+    font-family:'Courier New', Courier, monospace;
+    font-size:clamp(1.25rem, 0.9rem + 1.2vw, 1.9rem);;
+    color:var(--navbar_titulo);
+    text-shadow: 2px 1px 2px  var(--color-secondary);
+    flex: 1;
+    text-align:left;
+    margin-top:0.2em;
+    padding: 0px 0px 0px 2%;
+
+}
+
+.nav-bar, .nav-bar ul{
+    display:flex;
+    flex-direction: row;
+    justify-content:right;
+    flex: 1;
+    padding:0px;
+    gap:clamp(1.2rem, 2.2vw, 2.6rem);
+
+}
+
+.nav-bar a{
+    position: relative;
+}
+
+.nav-bar li, .nav-bar a{
+    list-style:none;
+    text-decoration: none;
+    font-family:monospace,'Courier New', Courier, monospace;
+    font-size:clamp(0.85rem,0.68rem + 0.35vw,1.05rem);
+    font-weight:bolder;
+    cursor: pointer;
+    color:var(--navbar_link);
+    transition: color 0.4s ease-in-out , transform 0.6s ease-in-out;
+}
+
+.nav-bar a::after{
+    content:'';
+    position: absolute;
+    bottom:-1px;
+    left:0;
+    height:2px;
+     width: 0;
+     background-color: var(--color-tertiary);
+    transition: width 0.6s ease;
+
+}
+
+.nav-bar a.active::after{
+    width:100%;
+    color: var(--color-tertiary);
+
+}
+
+.nav-bar li:hover, .nav-bar a:hover{
+    color:var(--color-tertiary);
+    transform: scale(1.1);
+}
+
+
+@media(max-width:820px){
+   .nav-bar li, .nav-bar a{
+    font-size:clamp(0.85rem,0.85rem + 0.35vw,1.45rem);
+}
+
+}
+
+@media(max-width:580px){
+
+    .nav-bar ul , .nav-bar li{
+        justify-content:left;
+        text-align: center;
+    }
+
+}

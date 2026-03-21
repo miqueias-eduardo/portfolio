@@ -1,0 +1,45 @@
+#about h3{
+    color:var(--texto);
+    font-family:'Courier New', Courier, monospace;
+    font-weight: lighter;
+    text-decoration: underline solid var(--color-tertiary);
+    font-size: 2.6em;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom:4%;
+}
+
+
+
+#about p, #about strong{
+    margin-inline: auto;
+    width:65%;
+    text-align: center;
+    justify-self: center;
+  color:var(--texto);
+    font-family:"Source Code Pro",Courier New, Courier, monospace;
+    font-size: clamp(0.9rem, 1vw + 0.5rem, 1.35rem);
+    line-height:1.8;
+    font-weight:400;
+}
+
+#about strong{
+  color:var(--color-tertiary);
+  font-weight:500;
+}
+
+#about p+p{
+  margin-top:1.1rem;
+}
+
+@media (max-width:800px){
+  #about p{
+    width:85%;
+  }
+}
+
+@media (max-width:440px){
+  #about p {
+    width:100%;
+  }
+}

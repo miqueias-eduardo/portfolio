@@ -1,0 +1,177 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+    background-color: var(--scrollbar-fundo);
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--scrollbar);
+    border-radius:10px;
+    border: 2px solid transparent;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: #5B73E8;
+}
+
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    transition: 1s;
+}
+
+body,html{
+    background-color:var(--fundo);
+}
+
+:target {
+  scroll-margin-top: 150px;
+}
+
+.tema-claro{
+
+   --scrollbar:#3550D1;
+   --scrollbar-fundo:#F4F4F5;
+   --tema-fundo:#dbdde6;
+   --tema-icon:#FFC83D;
+
+    --fundo:white;
+    --texto:rgba(0, 0, 0, 0.945);
+    --sombra:rgb(0, 0, 0);
+
+    /*temas universais*/
+   --color-primary:#1B2CC1;
+   --color-secondary:rgb(59, 59, 59);
+   --color-tertiary:#23CE6B;
+
+   /*cores do nav-bar*/
+   --navbar_header:#F0F1F4;
+   --navbar_link:#212529;
+   --navbar_titulo:#3550D1;
+
+ /*botoes de estilo do inicio*/
+    --inicio-btn1_fundo:var(--color-primary);
+    --inicio-btn1_texto:var(--fundo);
+
+    --inicio-btn2_fundo:var(--fundo);
+    --inicio-btn2_texto:var(--color-tertiary);
+
+    /*estilo das skills*/
+    --skill-card:rgb(226, 222, 222);
+
+    /*botoes de estilo de projetos*/
+    --pro-btn1_fundo:rgb(103, 130, 219);
+    --pro-btn1_texto:var(--texto);
+
+    --pro-btn2_fundo:var(--color-tertiary);
+    --pro-btn2_texto:var(--fundo);
+
+     /*estilo de contato*/
+    --contato-fundo:transparent;
+    --contato-input:var(--color-tertiary);
+    --contato-textarea:var(--color-primary);
+    --contato-texto:rgb(24, 23, 23);
+
+    /*estilo modal*/
+
+   --modal-bg: #ffffff;
+   --modal-text: #1a1a1a;
+   --modal-shadow: rgba(0,0,0,0.15);
+   --modal-overlay: rgba(0,0,0,0.35);
+
+}
+
+.tema-escuro{
+
+    --scrollbar:rgba(27,44,193,0.7);
+    --scrollbar-fundo:#212529;
+    --tema-fundo:#1A1B22;
+    --tema-icon:#6C82FF;
+
+   --fundo:rgba(0, 0, 0, 0.952);
+   --texto:rgb(255, 255, 255);
+   --sombra:white;
+
+
+     /*temas universais*/
+    --color-primary:#1B2CC1;
+    --color-secondary:rgb(59, 59, 59);
+    --color-tertiary:#23CE6B;
+
+     /*cores do nav-bar*/
+   --navbar_header:#1F1F23;
+   --navbar_link:#F4F4F5;;
+   --navbar_titulo:#5B73E8;
+
+    /*botoes de estilo do inicio*/
+    --inicio-btn1_fundo:#e9ebf0;
+    --inicio-btn1_texto:var(--fundo);
+
+    --inicio-btn2_fundo:var(--fundo);
+    --inicio-btn2_texto:var(--color-tertiary);
+
+    /*estilo das skills*/
+    --skill-card:rgb(26, 25, 25);
+
+    /*botoes de estilo de projetos*/
+    --pro-btn1_fundo:var(--color-primary);
+    --pro-btn1_texto:var(--texto);
+
+    --pro-btn2_fundo:var(--sombra);
+    --pro-btn2_texto:var(--color-primary);
+
+    /*estilo de contato*/
+    --contato-fundo:transparent;
+    --contato-input:rgb(81, 145, 105);
+    --contato-textarea:rgb(76, 95, 180);
+    --contato-texto:rgb(192, 189, 189);
+
+    /*estilo modal*/
+   --modal-bg: #16181d;
+   --modal-text: #f2f2f2;
+   --modal-shadow: rgba(0,0,0,0.6);
+   --modal-overlay: rgba(0,0,0,0.65);
+
+}
+
+
+main{
+
+    padding: 2%;
+    padding-top:130px;
+    margin: 0px 3% 5rem 3%;
+}
+
+footer{
+    margin-top:5rem;
+}
+
+
+section{
+    margin-bottom:15%;
+}
+
+section:nth-last-of-type(1){
+    margin-bottom:8%;
+}
+
+
+@media (max-width: 380px) {
+    main {
+        padding:1%;
+        padding-top:130px;
+        margin: 0px 1% 5rem 1%;
+    }
+
+}
