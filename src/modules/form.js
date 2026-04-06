@@ -18,10 +18,13 @@ export function envioForm (form){
       body: formData
     })
     .then(response => {
+      if (!response.ok) {
+    throw new Error("Falha ao enviar formulário");
+  }
       form.reset();
       modal.classList.add("active");
     })
-    .catch(error => alert("Erro ao enviar."));
+    .catch(error => alert("Erro ao enviar"));
   }
 
 export function fecharModal() {
