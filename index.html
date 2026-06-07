@@ -19,15 +19,19 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-
-
-    <title>Miqueias | Desenvolvedor Front-End</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Miqueias | Desenvolvedor Full Stack</title>
 </head>
 <body class="tema-claro">
     <header>
-        <h1 id="titulo">MIQUEIAS EDUARDO</h1>
+        <h1 id="titulo">M.EDUARDO</h1>
     <nav class="nav-bar">
    <ul>
 
@@ -42,10 +46,10 @@
 </nav>
 
 <div class="tema">
-    <i class="fa-solid fa-sun active" id="claro" ></i>
-    <i class="fa-solid fa-moon" id="escuro"  ></i>
+   <i class="bi bi-brightness-high" id="claro"></i>
+    <i class="bi bi-moon" id="escuro"></i>
 </div>
-  <i id ="menu-mobile" class="fa-solid fa-bars"></i>
+  <i id="menu-mobile" class="bi bi-list"></i>
     </header>
 
     <main>
@@ -57,19 +61,24 @@
           <h1>Olá,</h1>
           <h2>Eu sou Miqueias!</h2>
 
-          <h3>Desenvolvedor Full Stack em Formação
+          <h3>Desenvolvedor Full Stack,
 Desenvolvendo aplicações web com foco em código limpo, performance e boas práticas.</h3>
          </div>
+         <div id="links-grupo">
         <a href="assets/curriculo.pdf"
         target="_blank" aria-label="Curriculo">
-        Download CV
+         <i class="bi bi-download"></i>   Download CV
       </a>
-        <a href="#contato">entrar em contato</a>
-
+        <a href="#contato">entrar em contato   <i class="bi bi-arrow-right"> </i></a>
+       </div>
         </section>
 
     <section id="about">
-        <h3>Sobre Mim</h3>
+    <div class="header-section">
+      <h2 class="title-section">Sobre Mim</h2>
+      <div class="sec-line"></div>
+    </div>
+
 
 <p>
   Sou estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento
@@ -93,7 +102,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 </p>
     </section>
         <section id="skills" class="skills-section">
-  <h2 class="skills-title">Minhas Habilidades</h2>
+           <div class="header-section">
+        <h2 class="title-section">Habilidades</h2>
+      <div class="sec-line"></div>
+    </div>
+
   <div class="skills-grid">
     <div class="skill">
       <img src="assets/icons/icon-html5.png" alt="HTML">
@@ -135,7 +148,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 </section>
 
         <section id="projetos">
-          <h1>Meus Projetos</h1>
+          <div class="header-section">
+        <h2 class="title-section">Projetos</h2>
+      <div class="sec-line"></div>
+    </div>
+
         <div id="lista-projetos">
 
         <article class="projeto">
@@ -165,11 +182,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 
   <div class="content-btn">
     <a href="https://service-status-2m8e.onrender.com/monitors/">
-      Testar API
+      <i class="bi bi-box-arrow-up-right"></i> Testar API
     </a>
 
     <a href="https://github.com/miqueias-eduardo/service-status">
-      Acessar Repositório
+     <i class="bi bi-github"></i> Acessar Repositório
     </a>
   </div>
 </article>
@@ -200,11 +217,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 
   <div class="content-btn">
     <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-de-clientes/">
-      Acessar Projeto
+     <i class="bi bi-box-arrow-up-right"></i> Acessar Projeto
     </a>
 
     <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-de-clientes">
-      Acessar Repositório
+     <i class="bi bi-github"></i> Acessar Repositório
     </a>
   </div>
 </article>
@@ -234,11 +251,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 
   <div class="content-btn">
     <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-e-login/">
-      Acessar Projeto
+    <i class="bi bi-box-arrow-up-right"></i> Acessar Projeto
     </a>
 
     <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-e-login">
-      Acessar Repositório
+     <i class="bi bi-github"></i> Acessar Repositório
     </a>
   </div>
 </article>
@@ -268,11 +285,11 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
 
   <div class="content-btn">
     <a href="https://miqueias-eduardo.github.io/linguagens-de-programacao/">
-      Acessar Projeto
+     <i class="bi bi-box-arrow-up-right"></i> Acessar Projeto
     </a>
 
     <a href="https://github.com/miqueias-eduardo/linguagens-de-programacao">
-      Acessar Repositório
+     <i class="bi bi-github"></i> Acessar Repositório
     </a>
   </div>
 </article>

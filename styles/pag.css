@@ -5,14 +5,15 @@
 }
 
 ::-webkit-scrollbar{
-    width:10px;
+    width:5px;
     background-color: var(--scrollbar-fundo);
 }
 
 
 ::-webkit-scrollbar-thumb{
     background-color: var(--scrollbar);
-    border-radius:10px;
+    border-radius:25px;
+    height:100px;
     border: 2px solid transparent;
 }
 
@@ -160,6 +161,31 @@ footer{
 
 section{
     margin-bottom:15%;
+}
+
+.header-section{
+    display:flex;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 4.5rem;
+    gap: 1.2rem;
+}
+
+.title-section{
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+     letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color:var(--texto);
+}
+    .sec-line {
+    height: 1px;
+    font-family: 'IBM Plex Sans', 'Courier New', Courier, monospace;
+    min-width: 20px;
+    width: 100%;
+    flex: 1 1 0%;
+    background: var(--texto);
 }
 
 section:nth-last-of-type(1){

@@ -40,9 +40,9 @@ header{
 .nav-bar li, .nav-bar a{
     list-style:none;
     text-decoration: none;
-    font-family:monospace,'Courier New', Courier, monospace;
-    font-size:clamp(0.85rem,0.68rem + 0.35vw,1.05rem);
-    font-weight:bolder;
+    font-family:'IBM Plex Sans',monospace,'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    font-size:clamp(0.82rem,0.58rem + 0.35vw,1.05rem);
     cursor: pointer;
     color:var(--navbar_link);
     transition: color 0.4s ease-in-out , transform 0.6s ease-in-out;

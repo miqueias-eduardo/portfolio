@@ -1,16 +1,3 @@
-/* Estilo da seção */
-.skills-section {
-  padding: 60px 20px;
-}
-
-.skills-title {
-  text-align: center;
-  font-size: 2.4rem;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight:lighter;
-  color:var(--color-tertiary);
-  margin-bottom: 40px;
-}
 
 /* Grid das habilidades */
 .skills-grid {
@@ -40,6 +27,7 @@
   margin: 0;
   font-size: 1.1rem;
   font-weight:lighter;
+  font-family: 'IBM Plex Sans', 'Courier New', Courier, monospace;
   font-style:italic;
   text-shadow: 0px 0px 3px var(--sombra);
   color: var(--texto);

@@ -12,6 +12,7 @@
 #contato h2{
   width:100%;
   text-align: center;
+  font-family: 'IBM Plex Mono', Courier, monospace;
   font-size:3.7em;
   font-weight: lighter;
 }
@@ -21,8 +22,8 @@
   text-align: center;
   font-size:2em;
   padding:10px;
-  font-weight: lighter;
-  font-family: 'Courier New', Courier, monospace;
+  font-weight: 300;
+  font-family: 'IBM Plex Sans', Courier, monospace;
   color: var(--sombra);
 }
 
@@ -36,6 +37,7 @@
 }
 
 #contato #icons-contato i{
+  font-size: 2.3rem;
   cursor: pointer;
   color:var(--sombra);
   transition: transform 0.4s ease-in-out , color 0.4s ease-in-out;
@@ -69,7 +71,8 @@ color:var(--color-secondary)
 }
 
 #contato form input::placeholder{
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Source Code Pro', Courier, monospace;
+  text-transform:capitalize;
   font-weight:lighter;
   font-size:1em;
 }
@@ -112,9 +115,10 @@ color:var(--color-secondary)
   cursor:pointer;
 
   color:var(--contato-texto);
-  font-size:1.4rem;
-  font-family:monospace;
-  font-weight: bold;
+  font-size:1.3rem;
+  text-transform: capitalize;
+  font-family:'IBM Plex Mono',monospace;
+  font-weight: 500;
   transition: color 0.5s ease-in-out, background-color 0.45s ease-in-out;
 }
 
