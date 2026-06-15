@@ -44,7 +44,7 @@ body,html{
 
    --scrollbar:#3550D1;
    --scrollbar-fundo:#F4F4F5;
-   --tema-fundo:#dbdde6;
+   --tema-fundo:#f0efd3;
    --tema-icon:#FFC83D;
 
     --fundo:white;
@@ -52,7 +52,7 @@ body,html{
     --sombra:rgb(0, 0, 0);
 
     /*temas universais*/
-   --color-primary:#1B2CC1;
+   --color-primary:#38bdf8;
    --color-secondary:rgb(59, 59, 59);
    --color-tertiary:#23CE6B;
 
@@ -61,12 +61,15 @@ body,html{
    --navbar_link:#212529;
    --navbar_titulo:#3550D1;
 
- /*botoes de estilo do inicio*/
+ /* estilo do inicio*/
     --inicio-btn1_fundo:var(--color-primary);
     --inicio-btn1_texto:var(--fundo);
 
     --inicio-btn2_fundo:var(--fundo);
     --inicio-btn2_texto:var(--color-tertiary);
+
+    --inicio-cargo_fundo: rgba(53,80,209,.05);
+    --inicio-cargo_border:1px solid rgba(53,80,209,.20);
 
     /*estilo das skills*/
     --skill-card:rgb(226, 222, 222);
@@ -106,7 +109,7 @@ body,html{
 
 
      /*temas universais*/
-    --color-primary:#1B2CC1;
+    --color-primary:#38bdf8;
     --color-secondary:rgb(59, 59, 59);
     --color-tertiary:#23CE6B;
 
@@ -115,12 +118,15 @@ body,html{
    --navbar_link:#F4F4F5;;
    --navbar_titulo:#5B73E8;
 
-    /*botoes de estilo do inicio*/
-    --inicio-btn1_fundo:#e9ebf0;
+    /* estilo do inicio*/
+    --inicio-btn1_fundo:var(--color-primary);
     --inicio-btn1_texto:var(--fundo);
 
-    --inicio-btn2_fundo:var(--fundo);
-    --inicio-btn2_texto:var(--color-tertiary);
+    --inicio-btn2_fundo:#101314;
+    --inicio-btn2_texto:#d3dae2;
+
+    --inicio-cargo_fundo: rgba(53,80,209,.05);
+    --inicio-cargo_border:1px solid rgba(53,80,209,.20);
 
     /*estilo das skills*/
     --skill-card:rgb(26, 25, 25);
