@@ -47,9 +47,10 @@ body,html{
    --tema-fundo:#f0efd3;
    --tema-icon:#FFC83D;
 
-    --fundo:white;
+    --fundo:#f7f8fa;
     --texto:rgba(0, 0, 0, 0.945);
-    --sombra:rgb(0, 0, 0);
+    --text-muted: #515c67;
+    --sombra:#e3e8ee;
 
     /*temas universais*/
    --color-primary:#38bdf8;
@@ -70,6 +71,10 @@ body,html{
 
     --inicio-cargo_fundo: rgba(53,80,209,.05);
     --inicio-cargo_border:1px solid rgba(53,80,209,.20);
+
+
+    /*estilo sobre mim*/
+    --about-card:#ffffff;
 
     /*estilo das skills*/
     --skill-card:rgb(226, 222, 222);
@@ -103,9 +108,10 @@ body,html{
     --tema-fundo:#1A1B22;
     --tema-icon:#6C82FF;
 
-   --fundo:rgba(0, 0, 0, 0.952);
+   --fundo:#0b0d10;
    --texto:rgb(255, 255, 255);
-   --sombra:white;
+   --text-muted: #a3adb8;
+   --sombra:#232a32;;
 
 
      /*temas universais*/
@@ -127,6 +133,10 @@ body,html{
 
     --inicio-cargo_fundo: rgba(53,80,209,.05);
     --inicio-cargo_border:1px solid rgba(53,80,209,.20);
+
+
+    /*estilo sobre mim*/
+    --about-card:#15191e;
 
     /*estilo das skills*/
     --skill-card:rgb(26, 25, 25);

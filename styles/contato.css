@@ -24,7 +24,7 @@
   padding:10px;
   font-weight: 300;
   font-family: 'IBM Plex Sans', Courier, monospace;
-  color: var(--sombra);
+  color: var(--color-secondary);
 }
 
 #contato #icons-contato{
@@ -39,7 +39,7 @@
 #contato #icons-contato i{
   font-size: 2.3rem;
   cursor: pointer;
-  color:var(--sombra);
+  color:var(--texto);
   transition: transform 0.4s ease-in-out , color 0.4s ease-in-out;
 }
 
