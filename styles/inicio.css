@@ -37,7 +37,7 @@
     display: inline-flex;
     width:min-content;
     padding:.6rem 1rem;
-    border-radius:999px;
+    border-radius:30px;
 
     background:var(--inicio-cargo_fundo);
     border:var(--inicio-cargo_border);
@@ -81,7 +81,7 @@
     margin-bottom:2.5%;
 }
 
-#inicio img{
+#inicio .section-container img{
     width: clamp(9rem, 21vw, 19rem);
     aspect-ratio:1/1;
     border-radius:50%;
@@ -157,7 +157,7 @@ background-color: var(--inicio-btn2_fundo);
 
 @media(max-width:685px){
 
-    #inicio{
+    #inicio .section-container{
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -183,7 +183,7 @@ background-color: var(--inicio-btn2_fundo);
      margin-bottom:1.3rem;
     }
 
-    #inicio img{
+    #inicio .section-container img{
         width: clamp(12rem, 60vw, 19rem);
         position: relative;
         bottom:0;
