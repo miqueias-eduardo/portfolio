@@ -82,11 +82,17 @@ body,html{
     --skill-opacity:.45;
 
     /*botoes de estilo de projetos*/
-    --pro-btn1_fundo:rgb(103, 130, 219);
-    --pro-btn1_texto:var(--texto);
+    --pro-fundo:#ffffff;
 
-    --pro-btn2_fundo:var(--color-tertiary);
-    --pro-btn2_texto:var(--fundo);
+    --pro-tags-fundo:rgba(2, 132, 199, 0.06);
+    --pro-tags-texto: #0369a1;
+    --pro-tags-borda:1px solid rgba(2, 132, 199, 0.16);
+
+    --pro-btn1_fundo:var(--color-primary);
+    --pro-btn1_texto:var(--fundo);
+
+    --pro-btn2_fundo:var(--fundo);
+    --pro-btn2_texto:var(--texto);
 
      /*estilo de contato*/
     --contato-fundo:transparent;
@@ -127,7 +133,7 @@ body,html{
    --navbar_titulo:#5B73E8;
 
     /* estilo do inicio*/
-    --inicio-btn1_fundo:var(--color-primary);
+    --inicio-btn1_fundo:#38bdf8;
     --inicio-btn1_texto:var(--fundo);
 
     --inicio-btn2_fundo:#101314;
@@ -146,11 +152,17 @@ body,html{
     --skill-opacity:.25;
 
     /*botoes de estilo de projetos*/
-    --pro-btn1_fundo:var(--color-primary);
-    --pro-btn1_texto:var(--texto);
+    --pro-fundo:#15191e;
 
-    --pro-btn2_fundo:var(--sombra);
-    --pro-btn2_texto:var(--color-primary);
+    --pro-tags-fundo:rgba(63, 198, 255, 0.06);
+    --pro-tags-texto:#8fd9ff;
+    --pro-tags-borda:1px solid rgba(63, 198, 255, 0.18);
+
+    --pro-btn1_fundo:var(--color-primary);
+    --pro-btn1_texto:var(--fundo);
+
+    --pro-btn2_fundo:#12151a;
+    --pro-btn2_texto:var(--texto);
 
     /*estilo de contato*/
     --contato-fundo:transparent;
