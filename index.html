@@ -311,41 +311,80 @@ com foco em performance e experiência do usuário.</h3>
         </section>
 
     </main>
-     <footer id="contato">
-      <h2>Fale comigo!</h2>
+     <section id="contato">
+      <div class="contato-head">
+      <h2>Vamos conversar</h2>
 
       <h3>Se você tem um projeto em mente, vamos transformar em realidade.</h3>
-
+      </div>
+      <div class="contato-texto">
+      <p>Estou aberto a oportunidades, colaborações e novos desafios. Me chame por aqui:</p>
+      </div>
+      <div class="contato-grid">
       <aside id="icons-contato">
+
         <a href="https://github.com/miqueias-eduardo" target="_blank" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
+          <i class="ri-github-line"></i>
+          <span> Github </span>
         </a>
-        <a href="https://www.linkedin.com/in/miqueias-eduardo-331847371/" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/miqueias-eduardo/" target="_blank" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+          <span>Linkedin</span>
         </a>
-        <a href="mailto:miqueiaseduardo294@gmail.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:miqueiasfirmino.dev.com" aria-label="Email">
+          <i class="ri-mail-line"></i>
+          <span>Email</span>
           </a>
         <a href="https://wa.me/5581994442388" target="_blank" aria-label="WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="ri-whatsapp-line"></i>
+          <span>WhatsApp</span>
           </a>
       </aside>
 
-      <form action="https://formsubmit.co/miqueiaseduardo294@gmail.com" method="POST">
-        <input type="text" placeholder="nome" name="name" required>
-        <input type="email" id="email" placeholder="email" name="email" required>
-        <textarea name="mensagem" id="" placeholder="digite uma mensagem"required></textarea>
+      <form action="https://formsubmit.co/ca85773b0adea0f3ee806c5e2725d74f" method="POST">
+        <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="nome@dominio.com" required />
+              </div>
+              <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte sobre o seu projeto..." required></textarea>
+              </div>
         <input type="hidden" name="_captcha" value="false">
-        <button type="submit"><i class="fa-solid fa-mug-hot"></i>  vamos conversar</button>
+        <button type="submit"> Enviar mensagem <i class="bi bi-send"></i></button>
       </form>
+    </div>
 
-      &copy; 2026 — Miqueias Eduardo
-     </footer>
+  </section>
+
+  <footer>
+<p>Vamos construir algo juntos?</p>
+ <aside class="icons-footer">
+  <a href="https://github.com/miqueias-eduardo" target="_blank" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/miqueias-eduardo/" target="_blank" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="mailto:miqueiasfirmino.dev.com" aria-label="Email">
+          <i class="ri-mail-line"></i>
+          </a>
+        <a href="https://wa.me/5581994442388" target="_blank" aria-label="WhatsApp">
+          <i class="ri-whatsapp-line"></i>
+          </a>
+ </aside>
+ &copy; 2026 — Miqueias Eduardo
+  </footer>
+
      <div id="modal-sucesso" class="modal-overlay">
   <div class="modal-box">
     <div class="modal-icon">✓</div>
     <h2>Email enviado!</h2>
-    <p>Sua mensagem foi enviada com sucesso.</p>
+    <p>Recebi a sua mensagem e retornarei em breve.</p>
     <button id="fechar-modal">Fechar</button>
   </div>
 </div>

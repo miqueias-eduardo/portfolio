@@ -95,10 +95,15 @@ body,html{
     --pro-btn2_texto:var(--texto);
 
      /*estilo de contato*/
-    --contato-fundo:transparent;
-    --contato-input:var(--color-tertiary);
-    --contato-textarea:var(--color-primary);
+    --contato-fundo:rgb(255, 255, 255);
+    --contato-form:#ffffff;
+    --contato-icons:var(--color-primary);
+    --contato-btn_hover:#0284c7;
+    --contato-btn_sombra:0 0 0 var(--color-primary);
     --contato-texto:rgb(24, 23, 23);
+
+    /*estilo footer*/
+    --footer-fundo:#f1f4f8;
 
     /*estilo modal*/
 
@@ -119,7 +124,7 @@ body,html{
    --fundo:#0b0d10;
    --texto:rgb(255, 255, 255);
    --text-muted: #a3adb8;
-   --sombra:#232a32;;
+   --sombra:#232a32;
 
 
      /*temas universais*/
@@ -165,10 +170,15 @@ body,html{
     --pro-btn2_texto:var(--texto);
 
     /*estilo de contato*/
-    --contato-fundo:transparent;
-    --contato-input:rgb(81, 145, 105);
-    --contato-textarea:rgb(76, 95, 180);
+    --contato-fundo:#11141881;
+    --contato-form:#15191e;
+    --contato-icons:var(--color-primary);
+    --contato-btn_hover:#0284c7;
+    --contato-btn_sombra:0 0px 5px var(--color-primary);
     --contato-texto:rgb(192, 189, 189);
+
+    /*estilo de footer*/
+    --footer-fundo:#11141881;
 
     /*estilo modal*/
    --modal-bg: #16181d;
@@ -184,7 +194,7 @@ main{
     margin-bottom: 5rem
 }
 
-.section-container{
+.section-container, .contato-grid{
     position: relative;
     padding: 2%;
     margin: 0 3%;
@@ -196,8 +206,9 @@ main{
     background: var(--skill-fundo)
 }
 
-footer{
+section:last-of-type{
     margin-top:5rem;
+    margin-bottom:0;
 }
 
 
@@ -230,8 +241,80 @@ section{
     background: var(--texto);
 }
 
-section:nth-last-of-type(1){
-    margin-bottom:8%;
+/* Estilo do footer */
+
+footer{display:flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-top: 1px solid var(--sombra);
+  padding: 28px 0;
+  background: var(--footer-fundo);
+  text-align: center;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: var(--texto);
+
+}
+
+/* Estilo do footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-top: 1px solid var(--sombra);
+  padding: 28px 0;
+  background: var(--skill-fundo);
+  text-align: center;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  font-size: clamp(0.85rem, 2vw, 1.2rem); /* ← era 1.2rem */
+  font-weight: 300;
+  color: var(--texto);
+}
+
+footer p {
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+  font-size: clamp(1rem, 3vw, 1.5rem); /* ← era 1.5rem */
+}
+
+footer .icons-footer {
+  display: flex;
+  gap:clamp(1.5rem, 4vw, 3.5rem);
+}
+
+footer .icons-footer a {
+  display: flex;
+  border: 1px solid var(--sombra); /* ← mais sutil que --texto */
+  border-radius: 50%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: border-color 0.35s ease, transform 0.35s ease; /* ← transição no círculo */
+}
+
+footer .icons-footer i {
+  display: block;
+  font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.35s ease; /* ← só cor aqui */
+}
+
+footer .icons-footer a:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.1); /* ← escala o círculo inteiro, não duplica */
+}
+
+footer .icons-footer a:hover i {
+  color: var(--color-primary);
 }
 
 
