@@ -12,14 +12,14 @@ links.forEach((link) => {
 
 window.addEventListener("scroll", nav.scrollSpy);
 
-
+function mudarTema() {
+  nav.trocarTema();
+  nav.temaAtivo();
+}
 
 const tema = document.querySelector(".tema");
 
-tema.addEventListener('click', nav.trocarTema)
-
-
-
+tema.addEventListener('click', mudarTema);
 
 const menuMobile = document.getElementById("menu-mobile");
 
@@ -47,4 +47,5 @@ form.addEventListener("submit",function(event){
 
 document.addEventListener("DOMContentLoaded", () => {
       fecharModal();
+      nav.temaAtivo();
   })

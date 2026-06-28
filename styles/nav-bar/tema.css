@@ -34,7 +34,8 @@
 
 .tema i {
     position: absolute;
-    font-size: 1.15em;
+
+    font-size: 1.2em;
     color: var(--tema-icon);
     opacity: 0;
     transform: rotate(60deg) scale(0.5);

@@ -36,22 +36,29 @@ export function trocarTema (){
 
  const temaAtivo = document.body.className;
 try{
- if (temaAtivo==="tema-escuro"){
-  document.body.className ="tema-claro"
-  white.classList.add('active');
-  black.classList.remove('active');
- }
-
- else if(temaAtivo === "tema-claro"){
-  document.body.className = "tema-escuro"
-  black.classList.add('active');
-  white.classList.remove('active');
- }
+  if (document.body.classList.contains("tema-escuro")) {
+    document.body.classList.replace("tema-escuro", "tema-claro");
+  } else {
+    document.body.classList.replace("tema-claro", "tema-escuro");
+  }
 }
 
  catch(error){
  console.log(error);
  }
+}
+
+export function temaAtivo() {
+  const black = document.getElementById("escuro");
+  const white = document.getElementById("claro");
+
+  if (document.body.classList.contains("tema-escuro")) {
+    black.classList.add("active");
+    white.classList.remove("active");
+  } else {
+    white.classList.add("active");
+    black.classList.remove("active");
+  }
 }
 
 
