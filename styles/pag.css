@@ -60,7 +60,8 @@ body,html{
    /*cores do nav-bar*/
    --navbar_header:#F0F1F4;
    --navbar_link:#212529;
-   --navbar_titulo:#3550D1;
+   --navbar_link-fundo: rgba(14, 165, 233, 0.1);
+   --navbar-fundo_mobile:#ffffff;
 
  /* estilo do inicio*/
     --inicio-btn1_fundo:var(--color-primary);
@@ -134,9 +135,9 @@ body,html{
 
      /*cores do nav-bar*/
    --navbar_header:#1F1F23;
-   --navbar_link:#F4F4F5;;
-   --navbar_titulo:#5B73E8;
-
+   --navbar_link:#F4F4F5;
+   --navbar_link-fundo:rgba(56, 189, 248, 0.12);
+   --navbar-fundo_mobile:#15191e;
     /* estilo do inicio*/
     --inicio-btn1_fundo:#38bdf8;
     --inicio-btn1_texto:var(--fundo);
