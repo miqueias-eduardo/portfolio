@@ -4,7 +4,6 @@
 }
 
 
-
 #text{
     width:70%;
     justify-items: left;
@@ -82,15 +81,17 @@
 }
 
 #inicio .section-container img{
-    width: clamp(9rem, 21vw, 19rem);
+    width: clamp(12rem, 21vw, 19rem);
     aspect-ratio:1/1;
     border-radius:50%;
     padding:8px;
     position:absolute;
     right:0;
     top:5%;
+     border: 2px solid var(--inicio-img_border);
+     background-color: var(--inicio-img_fundo);
     transition:
-        transform .35s ease-in-out;
+        transform .35s ease-in-out, background-color .35s ease-in-out, border-color .35s ease-in-out;
 }
 
 #inicio img:hover{

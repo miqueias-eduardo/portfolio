@@ -70,6 +70,8 @@ body,html{
     --inicio-cargo_fundo: rgba(53,80,209,.05);
     --inicio-cargo_border:1px solid rgba(53,80,209,.20);
 
+    --inicio-img_fundo: #ffffff;
+    --inicio-img_border: #e2e8f0;
 
     /*estilo sobre mim*/
     --about-card:#ffffff;
@@ -145,6 +147,8 @@ body,html{
     --inicio-cargo_fundo: rgba(53,80,209,.05);
     --inicio-cargo_border:1px solid rgba(53,80,209,.20);
 
+    --inicio-img_fundo: #15191e;
+    --inicio-img_border:var(--sombra);
 
     /*estilo sobre mim*/
     --about-card:#15191e;
