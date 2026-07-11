@@ -13,7 +13,7 @@ export function envioForm (form){
     const modal=document.getElementById('modal-sucesso')
     const formData = new FormData(form);
 
-    fetch("https://formsubmit.co/miqueiaseduardo294@gmail.com", {
+    fetch("https://formsubmit.co/ca85773b0adea0f3ee806c5e2725d74f", {
       method: "POST",
       body: formData
     })

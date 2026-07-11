@@ -5,14 +5,14 @@
 }
 
 ::-webkit-scrollbar{
-    width:10px;
+    width:5px;
     background-color: var(--scrollbar-fundo);
 }
 
-
 ::-webkit-scrollbar-thumb{
     background-color: var(--scrollbar);
-    border-radius:10px;
+    border-radius:25px;
+    height:100px;
     border: 2px solid transparent;
 }
 
@@ -21,14 +21,12 @@
 }
 
 
-
-
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    transition: 1s;
+    transition: 0.45s;
 }
 
 body,html{
@@ -43,45 +41,69 @@ body,html{
 
    --scrollbar:#3550D1;
    --scrollbar-fundo:#F4F4F5;
-   --tema-fundo:#dbdde6;
+   --tema-fundo:#f0efd3;
    --tema-icon:#FFC83D;
 
-    --fundo:white;
+    --fundo:#f7f8fa;
     --texto:rgba(0, 0, 0, 0.945);
-    --sombra:rgb(0, 0, 0);
+    --text-muted: #515c67;
+    --sombra:#e3e8ee;
 
     /*temas universais*/
-   --color-primary:#1B2CC1;
+   --color-primary:#38bdf8;
    --color-secondary:rgb(59, 59, 59);
    --color-tertiary:#23CE6B;
 
    /*cores do nav-bar*/
    --navbar_header:#F0F1F4;
    --navbar_link:#212529;
-   --navbar_titulo:#3550D1;
+   --navbar_link-fundo: rgba(14, 165, 233, 0.1);
+   --navbar-fundo_mobile:#ffffff;
 
- /*botoes de estilo do inicio*/
+ /* estilo do inicio*/
     --inicio-btn1_fundo:var(--color-primary);
     --inicio-btn1_texto:var(--fundo);
 
     --inicio-btn2_fundo:var(--fundo);
     --inicio-btn2_texto:var(--color-tertiary);
 
+    --inicio-cargo_fundo: rgba(53,80,209,.05);
+    --inicio-cargo_border:1px solid rgba(53,80,209,.20);
+
+    --inicio-img_fundo: #ffffff;
+    --inicio-img_border: #e2e8f0;
+
+    /*estilo sobre mim*/
+    --about-card:#ffffff;
+
     /*estilo das skills*/
-    --skill-card:rgb(226, 222, 222);
+    --skill-fundo:#f1f4f8;
+    --skill-card:0 10px 30px rgba(16, 24, 40, 0.08);
+    --skill-opacity:.45;
 
     /*botoes de estilo de projetos*/
-    --pro-btn1_fundo:rgb(103, 130, 219);
-    --pro-btn1_texto:var(--texto);
+    --pro-fundo:#ffffff;
 
-    --pro-btn2_fundo:var(--color-tertiary);
-    --pro-btn2_texto:var(--fundo);
+    --pro-tags-fundo:rgba(2, 132, 199, 0.06);
+    --pro-tags-texto: #0369a1;
+    --pro-tags-borda:1px solid rgba(2, 132, 199, 0.16);
+
+    --pro-btn1_fundo:var(--color-primary);
+    --pro-btn1_texto:var(--fundo);
+
+    --pro-btn2_fundo:var(--fundo);
+    --pro-btn2_texto:var(--texto);
 
      /*estilo de contato*/
-    --contato-fundo:transparent;
-    --contato-input:var(--color-tertiary);
-    --contato-textarea:var(--color-primary);
+    --contato-fundo:rgb(255, 255, 255);
+    --contato-form:#ffffff;
+    --contato-icons:var(--color-primary);
+    --contato-btn_hover:#0284c7;
+    --contato-btn_sombra:0 0 0 var(--color-primary);
     --contato-texto:rgb(24, 23, 23);
+
+    /*estilo footer*/
+    --footer-fundo:#f1f4f8;
 
     /*estilo modal*/
 
@@ -99,43 +121,66 @@ body,html{
     --tema-fundo:#1A1B22;
     --tema-icon:#6C82FF;
 
-   --fundo:rgba(0, 0, 0, 0.952);
+   --fundo:#0b0d10;
    --texto:rgb(255, 255, 255);
-   --sombra:white;
+   --text-muted: #a3adb8;
+   --sombra:#232a32;
 
 
      /*temas universais*/
-    --color-primary:#1B2CC1;
+    --color-primary:#38bdf8;
     --color-secondary:rgb(59, 59, 59);
     --color-tertiary:#23CE6B;
 
      /*cores do nav-bar*/
    --navbar_header:#1F1F23;
-   --navbar_link:#F4F4F5;;
-   --navbar_titulo:#5B73E8;
-
-    /*botoes de estilo do inicio*/
-    --inicio-btn1_fundo:#e9ebf0;
+   --navbar_link:#F4F4F5;
+   --navbar_link-fundo:rgba(56, 189, 248, 0.12);
+   --navbar-fundo_mobile:#15191e;
+    /* estilo do inicio*/
+    --inicio-btn1_fundo:#38bdf8;
     --inicio-btn1_texto:var(--fundo);
 
-    --inicio-btn2_fundo:var(--fundo);
-    --inicio-btn2_texto:var(--color-tertiary);
+    --inicio-btn2_fundo:#101314;
+    --inicio-btn2_texto:#d3dae2;
+
+    --inicio-cargo_fundo: rgba(53,80,209,.05);
+    --inicio-cargo_border:1px solid rgba(53,80,209,.20);
+
+    --inicio-img_fundo: #15191e;
+    --inicio-img_border:var(--sombra);
+
+    /*estilo sobre mim*/
+    --about-card:#15191e;
 
     /*estilo das skills*/
-    --skill-card:rgb(26, 25, 25);
+    --skill-fundo:#11141881;
+    --skill-card:0 8px 30px rgba(0, 0, 0, 0.35);
+    --skill-opacity:.25;
 
     /*botoes de estilo de projetos*/
-    --pro-btn1_fundo:var(--color-primary);
-    --pro-btn1_texto:var(--texto);
+    --pro-fundo:#15191e;
 
-    --pro-btn2_fundo:var(--sombra);
-    --pro-btn2_texto:var(--color-primary);
+    --pro-tags-fundo:rgba(63, 198, 255, 0.06);
+    --pro-tags-texto:#8fd9ff;
+    --pro-tags-borda:1px solid rgba(63, 198, 255, 0.18);
+
+    --pro-btn1_fundo:var(--color-primary);
+    --pro-btn1_texto:var(--fundo);
+
+    --pro-btn2_fundo:#12151a;
+    --pro-btn2_texto:var(--texto);
 
     /*estilo de contato*/
-    --contato-fundo:transparent;
-    --contato-input:rgb(81, 145, 105);
-    --contato-textarea:rgb(76, 95, 180);
+    --contato-fundo:#11141881;
+    --contato-form:#15191e;
+    --contato-icons:var(--color-primary);
+    --contato-btn_hover:#0284c7;
+    --contato-btn_sombra:0 0px 5px var(--color-primary);
     --contato-texto:rgb(192, 189, 189);
+
+    /*estilo de footer*/
+    --footer-fundo:#11141881;
 
     /*estilo modal*/
    --modal-bg: #16181d;
@@ -147,14 +192,25 @@ body,html{
 
 
 main{
-
-    padding: 2%;
     padding-top:130px;
-    margin: 0px 3% 5rem 3%;
+    margin-bottom: 5rem
 }
 
-footer{
+.section-container, .contato-grid{
+    position: relative;
+    padding: 2%;
+    margin: 0 3%;
+}
+
+#skills{
+    margin-bottom: 5%;
+    padding: 5% 0;
+    background: var(--skill-fundo)
+}
+
+section:last-of-type{
     margin-top:5rem;
+    margin-bottom:0;
 }
 
 
@@ -162,15 +218,94 @@ section{
     margin-bottom:15%;
 }
 
-section:nth-last-of-type(1){
-    margin-bottom:8%;
+.header-section{
+    display:flex;
+    align-items: center;
+    width: 95%;
+    margin-bottom: 4.5rem;
+    gap: 1.2rem;
+}
+
+.title-section{
+    font-size: clamp(1.5rem, 2.2vw, 2.2rem);
+    font-weight: 300;
+    font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+     letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color:var(--texto);
+}
+    .sec-line {
+    height: 1px;
+    font-family: 'IBM Plex Sans', 'Courier New', Courier, monospace;
+    min-width: 20px;
+    width: 100%;
+    flex: 1 1 0%;
+    background: var(--texto);
+}
+
+/* Estilo do footer */
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  border-top: 1px solid var(--sombra);
+  padding: 28px 0;
+  background: var(--skill-fundo);
+  text-align: center;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  font-size: clamp(0.85rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: var(--texto);
+}
+
+footer p {
+  font-weight: 600;
+  font-family: 'IBM Plex Mono', 'Courier New', Courier, monospace;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--color-primary);
+  font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+footer .icons-footer {
+  display: flex;
+  gap:clamp(1.5rem, 4vw, 3.5rem);
+}
+
+footer .icons-footer a {
+  display: flex;
+  border: 1px solid var(--sombra);
+  border-radius: 50%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  transition: border-color 0.35s ease, transform 0.35s ease;
+}
+
+footer .icons-footer i {
+  display: block;
+  font-size: clamp(1.2rem, 2.8vw, 1.7rem);
+  color: var(--text-muted);
+  font-weight: 500;
+  transition: color 0.35s ease;
+}
+
+footer .icons-footer a:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+footer .icons-footer a:hover i {
+  color: var(--color-primary);
 }
 
 
 @media (max-width: 380px) {
-    main {
+    .section-container{
         padding:1%;
-        padding-top:130px;
         margin: 0px 1% 5rem 1%;
     }
 

@@ -16,23 +16,26 @@
     <link rel="stylesheet" href="styles/projetos.css">
     <link rel="stylesheet" href="styles/contato.css">
     <link rel="stylesheet" href="styles/modal.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.13.1/font/bootstrap-icons.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet">
+
+
+
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;400;500&display=swap" rel="stylesheet">
-
-
-    <title>Miqueias | Desenvolvedor Front-End</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Miqueias | Desenvolvedor Full Stack</title>
 </head>
 <body class="tema-claro">
     <header>
-        <h1 id="titulo">MIQUEIAS EDUARDO</h1>
+       <span id="logo">M</span>
+        <h1 id="titulo">EDUARDO</h1>
     <nav class="nav-bar">
    <ul>
 
 
-    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#inicio" class="active">Início</a></li>
     <li><a href="#about">Sobre</a></li>
     <li><a href="#skills">Habilidades</a></li>
     <li><a href="#projetos">Projetos</a></li>
@@ -41,36 +44,47 @@
 
 </nav>
 
+<nav class="controls">
 <div class="tema">
-    <i class="fa-solid fa-sun active" id="claro" ></i>
-    <i class="fa-solid fa-moon" id="escuro"  ></i>
+   <i class="bi bi-brightness-high" id="claro"></i>
+    <i class="bi bi-moon" id="escuro"></i>
 </div>
-  <i id ="menu-mobile" class="fa-solid fa-bars"></i>
+</nav>
+  <i id="menu-mobile" class="bi bi-list"></i>
     </header>
 
     <main>
         <section id="inicio">
-
-          <img src="assets/foto-perfil.jpg" alt="Foto de perfil" >
+          <div class="section-container">
+          <img src="assets/foto-perfil.webp" alt="Foto de perfil" >
 
          <div id="text">
-          <h1>Olá,</h1>
-          <h2>Eu sou Miqueias!</h2>
+          <div class="cargo"><code> &lt;Desenvolvedor Full Stack /&gt; </code></div>
+          <h1>Olá, Eu sou</h1>
+          <h2> Miqueias Eduardo!</h2>
 
-          <h3>Desenvolvedor Full Stack em Formação
-Desenvolvendo aplicações web com foco em código limpo, performance e boas práticas.</h3>
+          <h3>
+Construindo APIs, interfaces modernas e soluções web
+com foco em performance e experiência do usuário.</h3>
          </div>
-        <a href="assets/curriculo.pdf"
+         <div id="links-grupo">
+        <a href="assets/Miqueias_Eduardo_Curriculo.pdf"
         target="_blank" aria-label="Curriculo">
-        Download CV
+         <i class="bi bi-download"></i>   Download CV
       </a>
-        <a href="#contato">entrar em contato</a>
-
+        <a href="#contato">entrar em contato   <i class="bi bi-arrow-right"> </i></a>
+       </div>
+          </div>
         </section>
 
     <section id="about">
-        <h3>Sobre Mim</h3>
-
+      <div class="section-container">
+    <div class="header-section">
+      <h2 class="title-section">Sobre Mim</h2>
+      <div class="sec-line"></div>
+    </div>
+<div class="about-grid">
+<div class="about-text">
 <p>
   Sou estudante de Análise e Desenvolvimento de Sistemas com foco em desenvolvimento
   Full Stack. Gosto de construir aplicações do zero — desde a interface até a integração
@@ -91,56 +105,105 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
   cada projeto se torna uma oportunidade de consolidar conhecimentos e
   explorar novas soluções.
 </p>
+</div>
+
+<aside class="about-card">
+     <h3>Como eu trabalho</h3>
+        <ul class="about-list">
+                <li>
+                  <span class="check">→</span> Código organizado e modular
+                </li>
+                <li>
+                  <span class="check">→</span> Foco em performance e boas práticas
+                </li>
+                <li>
+                  <span class="check">→</span> Atenção à experiência do usuário
+                </li>
+                <li>
+                  <span class="check">→</span> Aprendizado contínuo na prática
+                </li>
+       </ul>
+
+</aside>
+</div>
+      </div>
     </section>
         <section id="skills" class="skills-section">
-  <h2 class="skills-title">Minhas Habilidades</h2>
+          <div class="section-container">
+           <div class="header-section">
+        <h2 class="title-section">Habilidades</h2>
+      <div class="sec-line"></div>
+    </div>
+
   <div class="skills-grid">
-    <div class="skill">
-      <img src="assets/icons/icon-html5.png" alt="HTML">
-      <p>HTML</p>
-    </div>
-    <div class="skill">
-      <img src="assets/icons/icon-css.png" alt="CSS">
-      <p>CSS</p>
-    </div>
-    <div class="skill">
-      <img src="assets/icons/icon-javascript.png" alt="JavaScript">
-      <p>JavaScript</p>
-    </div>
-    <div class="skill">
-      <img src="assets/icons/icon-python.png" alt="Python">
-      <p>Python</p>
+    <article class="skill-group">
+              <h3 class="skill-group-title">Front-end</h3>
+              <ul class="skill-chips">
+                <li class="chip">HTML5</li>
+                <li class="chip">CSS3</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">Responsive Design</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3 class="skill-group-title">Back-end</h3>
+              <ul class="skill-chips">
+                <li class="chip">Node.js</li>
+                <li class="chip">Express</li>
+                <li class="chip">APIs REST</li>
+                <li class="chip">Java</li>
+                <li class="chip">Python</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3 class="skill-group-title">Bancos de dados</h3>
+              <ul class="skill-chips">
+                <li class="chip">MySQL</li>
+                <li class="chip">PostgreSQL</li>
+                <li class="chip">SQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3 class="skill-group-title">Ferramentas</h3>
+              <ul class="skill-chips">
+                <li class="chip">Git</li>
+                <li class="chip">GitHub</li>
+                <li class="chip">Postman</li>
+                <li class="chip">VS Code</li>
+              </ul>
+            </article>
+
+            <article class="skill-group">
+              <h3 class="skill-group-title">Soft skills</h3>
+              <ul class="skill-chips">
+                <li class="chip">Organização</li>
+                <li class="chip">Resolução de problemas</li>
+                <li class="chip">Curiosidade</li>
+                <li class="chip">Aprendizado contínuo</li>
+                <li class="chip">Adaptabilidade</li>
+              </ul>
+            </article>
     </div>
 
-    <div class="skill">
-     <img src="assets/icons/icon-node.js" alt="Node.js">
-      <p>Node.js</p></div>
-
-    <div class="skill">
-      <img src="assets/icons/icon-java.png" alt="Java">
-      <p>Java</p>
-    </div>
-
-    <div class="skill">
-      <img src="assets/icons/icon-sql.png" alt="SQL">
-      <p>SQL</p>
-    </div>
-
-    <div class="skill">
-      <img src="assets/icons/icon-git.png" alt="GIT">
-      <p>GIT</p>
-    </div>
-
+  </div>
   </div>
 </section>
 
         <section id="projetos">
-          <h1>Meus Projetos</h1>
+          <div class="section-container">
+          <div class="header-section">
+        <h2 class="title-section">Projetos</h2>
+      <div class="sec-line"></div>
+    </div>
+
         <div id="lista-projetos">
 
         <article class="projeto">
   <div class="content-img">
-    <img src="assets/projetos-img/img-projeto4.png" alt="trecho do código da API de monitoramento de serviços">
+    <img src="assets/projetos-img/img-projeto1.png" alt="trecho do código da API de monitoramento de serviços">
   </div>
 
   <div class="text">
@@ -153,23 +216,21 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
       em arquitetura modular, escalabilidade e organização do backend.
     </p>
 
-    <ul>
-      <li>Cadastro e gerenciamento de monitores</li>
-      <li>Verificação automática de status dos serviços</li>
-      <li>Controle de execução dos monitores</li>
-      <li>Persistência de dados com PostgreSQL</li>
-      <li>Arquitetura modular e separação de responsabilidades</li>
-      <li>Consumo de APIs externas com Axios</li>
-    </ul>
+    <ul class="project-tags">
+       <li>Node.js</li>
+       <li>Express</li>
+       <li>PostgreSQL</li>
+       <li>Axios</li>
+   </ul>
   </div>
 
   <div class="content-btn">
     <a href="https://service-status-2m8e.onrender.com/monitors/">
-      Testar API
+      <i class="ri-arrow-right-up-long-line"></i> Testar API
     </a>
 
     <a href="https://github.com/miqueias-eduardo/service-status">
-      Acessar Repositório
+     <i class="ri-github-line"></i>Repositório
     </a>
   </div>
 </article>
@@ -189,29 +250,29 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
       da lógica da aplicação.
     </p>
 
-    <ul>
-      <li>Cadastro, edição e remoção de clientes</li>
-      <li>Persistência de dados com localStorage</li>
-      <li>Manipulação dinâmica do DOM</li>
-      <li>Estrutura modular e organizada</li>
-      <li>Interface intuitiva e responsiva</li>
+   <ul class="project-tags">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>DOM</li>
+        <li>localStorage</li>
     </ul>
   </div>
 
   <div class="content-btn">
     <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-de-clientes/">
-      Acessar Projeto
+     <i class="ri-arrow-right-up-long-line"></i>Ver Projeto
     </a>
 
     <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-de-clientes">
-      Acessar Repositório
+     <i class="ri-github-line"></i> Repositório
     </a>
   </div>
 </article>
 
 <article class="projeto">
   <div class="content-img">
-    <img src="assets/projetos-img/img-projeto1.png" alt="tela do sistema de cadastro e login">
+    <img src="assets/projetos-img/img-projeto3.png" alt="tela do sistema de cadastro e login">
   </div>
 
   <div class="text">
@@ -223,101 +284,106 @@ Desenvolvendo aplicações web com foco em código limpo, performance e boas pr�
       e login com persistência local de dados e verificação de credenciais.
     </p>
 
-    <ul>
-      <li>Validação de nome, e-mail e senha</li>
-      <li>Sistema de autenticação com localStorage</li>
-      <li>Feedback visual para erros e sucesso</li>
-      <li>Manipulação dinâmica do DOM</li>
-      <li>Interface simples e responsiva</li>
+    <ul class="project-tags">
+       <li>HTML5</li>
+       <li>CSS3</li>
+       <li>JavaScript</li>
+       <li>DOM</li>
+       <li>localStorage</li>
     </ul>
   </div>
 
   <div class="content-btn">
     <a href="https://miqueias-eduardo.github.io/sistema-de-cadastro-e-login/">
-      Acessar Projeto
+    <i class="ri-arrow-right-up-long-line"></i> Ver Projeto
     </a>
 
     <a href="https://github.com/miqueias-eduardo/sistema-de-cadastro-e-login">
-      Acessar Repositório
-    </a>
-  </div>
-</article>
-
-<article class="projeto">
-  <div class="content-img">
-    <img src="assets/projetos-img/img-projeto3.png" alt="tela do site de linguagens de programação">
-  </div>
-
-  <div class="text">
-    <h2>Site de Linguagens de Programação</h2>
-
-    <p>
-      Projeto desenvolvido para apresentar diferentes linguagens de programação
-      de forma visual e organizada, com foco em responsividade,
-      estrutura semântica e experiência do usuário.
-    </p>
-
-    <ul>
-      <li>Layout moderno e responsivo</li>
-      <li>Estrutura HTML semântica</li>
-      <li>Interatividade com JavaScript</li>
-      <li>Navegação simples e intuitiva</li>
-      <li>Código organizado e estruturado</li>
-    </ul>
-  </div>
-
-  <div class="content-btn">
-    <a href="https://miqueias-eduardo.github.io/linguagens-de-programacao/">
-      Acessar Projeto
-    </a>
-
-    <a href="https://github.com/miqueias-eduardo/linguagens-de-programacao">
-      Acessar Repositório
+     <i class="ri-github-line"></i>Repositório
     </a>
   </div>
 </article>
 
 
-
-          </div>
+    </div>
+    </div>
         </section>
 
     </main>
-     <footer id="contato">
-      <h2>Fale comigo!</h2>
+     <section id="contato">
+      <div class="contato-head">
+      <h2>Vamos conversar</h2>
 
       <h3>Se você tem um projeto em mente, vamos transformar em realidade.</h3>
-
+      </div>
+      <div class="contato-texto">
+      <p>Estou aberto a oportunidades, colaborações e novos desafios. Me chame por aqui:</p>
+      </div>
+      <div class="contato-grid">
       <aside id="icons-contato">
+
         <a href="https://github.com/miqueias-eduardo" target="_blank" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
+          <i class="ri-github-line"></i>
+          <span> Github </span>
         </a>
-        <a href="https://www.linkedin.com/in/miqueias-eduardo-331847371/" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/miqueias-eduardo/" target="_blank" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+          <span>Linkedin</span>
         </a>
-        <a href="mailto:miqueiaseduardo294@gmail.com" aria-label="Email">
-          <i class="fa-solid fa-envelope"></i>
+        <a href="mailto:miqueiasfirmino.dev.com" aria-label="Email">
+          <i class="ri-mail-line"></i>
+          <span>Email</span>
           </a>
         <a href="https://wa.me/5581994442388" target="_blank" aria-label="WhatsApp">
-          <i class="fa-brands fa-whatsapp"></i>
+          <i class="ri-whatsapp-line"></i>
+          <span>WhatsApp</span>
           </a>
       </aside>
 
-      <form action="https://formsubmit.co/miqueiaseduardo294@gmail.com" method="POST">
-        <input type="text" placeholder="nome" name="name" required>
-        <input type="email" id="email" placeholder="email" name="email" required>
-        <textarea name="mensagem" id="" placeholder="digite uma mensagem"required></textarea>
+      <form action="https://formsubmit.co/ca85773b0adea0f3ee806c5e2725d74f" method="POST">
+        <div class="field">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Seu nome" required />
+              </div>
+              <div class="field">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="nome@dominio.com" required />
+              </div>
+              <div class="field">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder="Conte sobre o seu projeto..." required></textarea>
+              </div>
         <input type="hidden" name="_captcha" value="false">
-        <button type="submit"><i class="fa-solid fa-mug-hot"></i>  vamos conversar</button>
+        <button type="submit"> Enviar mensagem <i class="bi bi-send"></i></button>
       </form>
+    </div>
 
-      &copy; 2026 — Miqueias Eduardo
-     </footer>
+  </section>
+
+  <footer>
+<p>Vamos construir algo juntos?</p>
+ <aside class="icons-footer">
+  <a href="https://github.com/miqueias-eduardo" target="_blank" aria-label="GitHub">
+          <i class="ri-github-line"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/miqueias-eduardo/" target="_blank" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="mailto:miqueiasfirmino.dev.com" aria-label="Email">
+          <i class="ri-mail-line"></i>
+          </a>
+        <a href="https://wa.me/5581994442388" target="_blank" aria-label="WhatsApp">
+          <i class="ri-whatsapp-line"></i>
+          </a>
+ </aside>
+ &copy; 2026 — Miqueias Eduardo
+  </footer>
+
      <div id="modal-sucesso" class="modal-overlay">
   <div class="modal-box">
     <div class="modal-icon">✓</div>
     <h2>Email enviado!</h2>
-    <p>Sua mensagem foi enviada com sucesso.</p>
+    <p>Recebi a sua mensagem e retornarei em breve.</p>
     <button id="fechar-modal">Fechar</button>
   </div>
 </div>
